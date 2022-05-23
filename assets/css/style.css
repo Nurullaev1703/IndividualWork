@@ -1,0 +1,325 @@
+@import url(./default.css);
+body{
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+    background-color: #373A3C;
+}
+h1,h2,h3,h4,h5{
+    font-weight: 700;
+    color: white;
+}
+h1{
+    font-size: 48px;
+}
+h2{
+    font-size: 36px;
+}
+h3{
+    font-size: 24px;
+}
+h4{
+    font-size: 21px;
+}
+h5{
+    font-size: 18px;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+.btn{
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.btn.green{
+    background-color:#8DD83D;
+    width: 280px;
+    height: 60px;
+
+}
+.btn.gray{
+    background: linear-gradient(180deg, #686C6F 0%, #373A3C 100%);;
+}
+header a{
+    font-size: 16px;
+    color:rgba(255, 255, 255, 0.5);
+    transition: 0.4s;
+}
+header a:hover{
+    color: white;
+}
+.wrapper{
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+header{
+    width: 70%;
+    background-color: #373A3C;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 11px 167px;
+}
+.header-logo{
+    width: 30%;
+}
+header .container svg{
+    margin-left: 8px;
+}
+header .container{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+header input[type="text"]{
+    width: 210px;
+    height: 38px;
+    background-color: white;
+    color: #435766;
+    border: 1px solid #CCCCCC;
+    border-radius: 4px;
+}
+.carousel{
+    position: relative;
+    width: 100%;
+    padding-top: 50%;
+    background: url(../img/carousel.png) center no-repeat;
+    background-size: cover;
+    border-top: 3px solid #777777;
+}
+.content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.content.right{
+    left: 90%;
+}
+.content-center{
+    position: absolute;
+    top: 31%;
+    left: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+.content-center .center-btn{
+    margin-top: 134px;
+    display: flex;
+    flex-direction: row;
+}
+
+.content-center .btn.green{
+    margin-right: 20px;
+    width: 136px;
+    height: 38px;
+}
+.btn.gray{
+    width: 148px;
+    height: 38px;
+}
+.slider-menu{
+    position: absolute;
+    top: 90%;
+    left: 50%;
+}
+.highlights{
+    position: relative;
+    width: 100%;
+    height: 50%;
+    padding-bottom: 100px;
+    background: radial-gradient(100% 100% at 50% 0%, #686C6F 0%, #373A3C 100%);
+}
+.highlights-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 64px;
+}
+.highlights-content .card-container .card:last-child img{
+    width: 60%;
+    height: 60%;
+}
+.card-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 42px;
+}
+.card{
+    width: 320px;
+    height: 420px;
+    background-color: #ffffff;
+    border: 1px solid #8DD83D;
+    margin-right: 64px;
+    border-radius: 4px;
+    transition: 0.4s;
+}
+.card:hover{
+    transform: scale(1.1);
+}
+.card:last-child{
+    margin-right: 0;
+}
+.card .logo{
+    width: 100%;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fafafa;
+}
+.card h3, .card h4, .card h5{
+    color: #435766;
+    margin: 22px;
+}
+.card .btn{
+    margin-left: 21px; 
+}
+.games{
+    width: 100%;
+    height: 50%;
+    background: url(../img/COD.png) 100% 100% no-repeat;
+    background-size: cover;
+}
+.games .cover{
+    width: 100%;
+    height: 100%;
+    background: rgba(23, 23, 23, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.games .cover .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding-top: 100px;
+    margin-left: 387px;
+}
+.games .cover .container h2{
+    margin-right: 400px;
+}
+.games .card-container{
+    width: 95%;
+    margin-left: 67px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 74px;    
+}
+.games .card-container{
+    margin-top: 57px;
+}
+.games .card-container .card{
+    margin-right: 29px;
+}
+.games .card-container .card:last-child{
+    width: 280px;
+    margin-right: 0;
+    border-right: none;
+}
+.games .card-container .card:last-child .btn{
+    width: 259px;
+}
+.games .card-container .card h5{
+    margin-bottom: 109px;
+}
+.games .card-container .card:first-child h5{
+    margin-bottom: 0;
+}
+.games .cover .btn.gray{
+    height: 53px;
+    margin-bottom: 140px;
+}
+.lab{
+    width: 100%;
+    height: 480px;
+    background: url(../img/lab_bg.png) 100% 100% no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+.lab .lab-container{
+    width: 70%;
+    height: 100%;
+    margin-top: 114px;
+    padding-bottom: 145px;
+}
+.lab .lab-container h1{
+    margin-bottom: 9px;
+}
+.lab .lab-container h3{
+    width: 50%;
+    margin-bottom: 37px;
+}
+.lab-container .lab-buttons .btn{
+    height: 60px;
+}
+.lab-container .lab-buttons .btn.gray{
+    margin-right: 15px;
+}
+footer{
+    padding-top: 58px;
+    width: 100%;
+    height: 30%;
+}
+footer .links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-left: 85px;
+}
+.navigate{
+    width: 78%;
+    justify-content: space-between;
+}
+.links nav{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.links nav h5{
+    color: #8DD83D;
+    margin-bottom: 34px;
+}
+.links nav a{
+    color: #ffffff;
+    margin-bottom: 29px;
+}
+.links nav a:last-child{
+    margin-bottom: 59px;
+}
+.links .contacts svg{
+    margin-right: 20px;
+}
+footer .info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #CCCCCC;
+    padding: 19px 0 38px 0;
+}
+footer .info p{
+    font-size: 16px;
+    color: #ffffff;
+}
